@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "totemindicator",
+  "version": "1.0.0",
+  "name": "Totem Indicator",
+  "description": "Glows a player if they are not holding a totem.",
+  "authors": ["ooqe"],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/totemindicator",
+    "sources": "https://github.com/ooqeDev/TotemIndicator",
+    "issues": "https://github.com/ooqeDev/TotemIndicator/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/totemindicator/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.ooqe.totemindicator.TotemIndicator"
+    ],
+    "modmenu": [
+      "com.ooqe.totemindicator.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "totemindicator.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": "*",
+    "cloth-config": "*"
+  }
+}
